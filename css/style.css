@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+
+  max-width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-size: 16px;
+  background-color: rgba(236, 228, 228, 0.884);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #65c981;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+header section {
+  background-color: #94e3aa;
+  border: 1px solid rgb(73, 90, 71);
+  padding: 16px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 5px #2b6130;
+  font-weight: bold;
+  align-items: center;
+  margin: 30px 20px 30px 20px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact-form h2 {
+  margin-top: 0;
+}
+
+#contact-form div {
+  margin-bottom: 1em;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #3071a9;
+}
+
+.iconCV {
+  float: left;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #94e3aa;
+  border-top: 1px solid;
+  padding-top: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Estilos para pantallas más grandes */
+  header {
+    padding: 40px;
+  }
+
+  header img {
+    max-width: 200px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas de notebooks */
+  header {
+    padding: 60px;
+  }
+
+  header img {
+    max-width: 250px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main > * {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  main > *:last-child {
+    padding-right: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  ul {
+    padding-left: 30px;
+  }
+}
